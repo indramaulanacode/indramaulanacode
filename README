@@ -1,4 +1,6 @@
-# Hi, I'm Indra Maulana
+from pathlib import Path
+
+content = """# Hi, I'm Indra Maulana 👋
 
 ### Software Engineer | Robotics & Automation | Full-Stack Developer
 
@@ -18,11 +20,11 @@ My interests combine **software engineering, robotics, automation, system archit
 
 | Project | Description | Technologies |
 |---|---|---|
-| [Rooms](https://github.com/indramaulanacode/Rooms) | Collaboration platform for documents, boards, chat and video communication. | TypeScript, React |
+| [Rooms](https://github.com/indramaulanacode/Rooms) | Collaboration platform for documents, boards, chat, and video communication. | TypeScript, React |
 | [Nexora](https://github.com/indramaulanacode/Nexora) | Sovereign Layer 1 blockchain and cryptocurrency ecosystem. | TypeScript, Cosmos SDK |
 | [CryptoInsights](https://github.com/indramaulanacode/cryptoinsights) | Cryptocurrency market insights and data visualization platform. | TypeScript, Next.js |
 | [Communities](https://github.com/indramaulanacode/Communities) | Community management and engagement platform. | React, TypeScript |
-| [Techpedia](https://github.com/indramaulanacode/techpedia) | Technology publication and editorial platform. | Web Development |
+| [Techpedia](https://github.com/indramaulanacode/techpedia) | Technology publication and editorial platform. | Web Technologies |
 | [Compressify](https://github.com/indramaulanacode/compressify) | Digital tools for file compression and conversion. | Web Technologies |
 
 ---
@@ -85,3 +87,8 @@ I'm interested in connecting with developers, engineers, designers, recruiters, 
 > Build with purpose. Engineer with precision. Design with creativity. Keep learning and keep innovating.
 
 ⭐ Thanks for visiting my GitHub profile!
+"""
+
+path = Path("/mnt/data/README.md")
+path.write_text(content, encoding="utf-8")
+print(f"Created {path}")
